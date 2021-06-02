@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="text">文章</string>
+    <string name="picture">图片</string>
+    <string name="video">视频</string>
+    <string name="about">关于</string>
 </resources>
