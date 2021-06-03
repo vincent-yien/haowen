@@ -13,10 +13,18 @@ import androidx.fragment.app.FragmentManager
 import androidx.viewpager.widget.ViewPager
 import butterknife.BindView
 import butterknife.ButterKnife
+import com.google.gson.Gson
+import com.google.gson.JsonParser
 import com.vincent.kotlin1.R
+import com.vincent.kotlin1.bean.Data
+import com.vincent.kotlin1.synccallback.HttpCallBack
+import com.vincent.kotlin1.util.HttpConstans
+import com.vincent.kotlin1.util.HttpUtil
 import com.vincent.kotlin1.widget.MainFragmentAdapter
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.bottom_box_item.*
+import org.json.JSONObject
+import java.util.*
 import java.util.zip.Inflater
 
 class MainActivity : BaseActivity(), View.OnClickListener {
@@ -30,6 +38,7 @@ class MainActivity : BaseActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         loadUI()
+
     }
 
     fun loadUI(){
@@ -46,7 +55,8 @@ class MainActivity : BaseActivity(), View.OnClickListener {
             mainViewPager = content
             fragmentAdapter = MainFragmentAdapter(supportFragmentManager,4)
             mainViewPager.adapter = fragmentAdapter
-            mainViewPager.currentItem = 1
+            mainViewPager.currentItem = 0
+
 
     }
 
@@ -56,7 +66,7 @@ class MainActivity : BaseActivity(), View.OnClickListener {
             if(textView != null){
                 when(textView.text){
                     resources.getText(R.string.text) ->
-                        mainViewPager.setCurrentItem(0)
+                        mainViewPager.currentItem = 0
 
                 }
             }

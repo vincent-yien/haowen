@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/article_list_pic"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_300px"/>
+    
+    <TextView
+        android:id="@+id/article_list_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_100px"
+        android:layout_below="@id/article_list_pic"
+        android:textColor="@color/black"/>
+
+</RelativeLayout>

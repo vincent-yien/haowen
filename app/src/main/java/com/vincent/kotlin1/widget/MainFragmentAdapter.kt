@@ -9,9 +9,9 @@ class MainFragmentAdapter(fm: FragmentManager,var size : Int) : FragmentPagerAda
 
     override fun getItem(position: Int): Fragment {
         lateinit var  fragment : Fragment
-        when(position){
-            0 -> fragment = ArticleFragment()
-        }
+//        when(position){
+//            0 -> fragment = ArticleFragment()
+//        }
         fragment = ArticleFragment()
         return fragment
     }
