@@ -1,6 +1,5 @@
 package com.vincent.kotlin1.widget
 
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -12,15 +11,16 @@ import com.vincent.kotlin1.bean.Data
 
 class ArticleListAdapter : RecyclerView.Adapter<ArticleListAdapter.ArticleItemHolder>() {
 
-    private lateinit var mData : ArrayList<Data>
+    private var mData : ArrayList<Data> = ArrayList()
 
-    fun setData( data : ArrayList<Data>){
-        mData = data
+    fun setData(data: ArrayList<Data>?){
+        if (data != null) {
+            mData = data
+        }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ArticleListAdapter.ArticleItemHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.article_list_item,parent,false)
-        Log.d("RANWS","createView")
         return ArticleItemHolder(view)
     }
 
@@ -31,7 +31,6 @@ class ArticleListAdapter : RecyclerView.Adapter<ArticleListAdapter.ArticleItemHo
     override fun onBindViewHolder(holder: ArticleListAdapter.ArticleItemHolder, position: Int) {
 //        holder.itemView.findViewById<ImageView>(R.id.article_list_pic).background =
         holder.title.text = mData[position].excerpt
-        Log.d("RANWS","data:"+(mData[position].excerpt))
     }
 
     class ArticleItemHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
