@@ -1,7 +1,8 @@
-package com.vincent.kotlin1.bean;
+package com.vincent.kotlin1.bean.zhuanlan;
 
-public class Data
-{
+import com.vincent.kotlin1.bean.articleBean.ArticleBaseBean;
+
+public class Data extends ArticleBaseBean {
     private int updated;
 
     private boolean is_labeled;
@@ -52,154 +53,203 @@ public class Data
 
     private Suggest_edit suggest_edit;
 
-    public void setUpdated(int updated){
+    public void setUpdated(int updated) {
         this.updated = updated;
     }
-    public int getUpdated(){
+
+    public int getUpdated() {
         return this.updated;
     }
-    public void setIs_labeled(boolean is_labeled){
+
+    public void setIs_labeled(boolean is_labeled) {
         this.is_labeled = is_labeled;
     }
-    public boolean getIs_labeled(){
+
+    public boolean getIs_labeled() {
         return this.is_labeled;
     }
-    public void setCopyright_permission(String copyright_permission){
+
+    public void setCopyright_permission(String copyright_permission) {
         this.copyright_permission = copyright_permission;
     }
-    public String getCopyright_permission(){
+
+    public String getCopyright_permission() {
         return this.copyright_permission;
     }
-    public void setExcerpt(String excerpt){
+
+    public void setExcerpt(String excerpt) {
         this.excerpt = excerpt;
     }
-    public String getExcerpt(){
+
+    public String getExcerpt() {
         return this.excerpt;
     }
-    public void setAdmin_closed_comment(boolean admin_closed_comment){
+
+    public void setAdmin_closed_comment(boolean admin_closed_comment) {
         this.admin_closed_comment = admin_closed_comment;
     }
-    public boolean getAdmin_closed_comment(){
+
+    public boolean getAdmin_closed_comment() {
         return this.admin_closed_comment;
     }
-    public void setArticle_type(String article_type){
+
+    public void setArticle_type(String article_type) {
         this.article_type = article_type;
     }
-    public String getArticle_type(){
+
+    public String getArticle_type() {
         return this.article_type;
     }
-    public void setReason(String reason){
+
+    public void setReason(String reason) {
         this.reason = reason;
     }
-    public String getReason(){
+
+    public String getReason() {
         return this.reason;
     }
-    public void setTitle_image(String title_image){
+
+    public void setTitle_image(String title_image) {
         this.title_image = title_image;
     }
-    public String getTitle_image(){
+
+    public String getTitle_image() {
         return this.title_image;
     }
-    public void setExcerpt_title(String excerpt_title){
+
+    public void setExcerpt_title(String excerpt_title) {
         this.excerpt_title = excerpt_title;
     }
-    public String getExcerpt_title(){
+
+    public String getExcerpt_title() {
         return this.excerpt_title;
     }
-    public void setId(int id){
+
+    public void setId(int id) {
         this.id = id;
     }
-    public int getId(){
+
+    public int getId() {
         return this.id;
     }
-    public void setVoteup_count(int voteup_count){
+
+    public void setVoteup_count(int voteup_count) {
         this.voteup_count = voteup_count;
     }
-    public int getVoteup_count(){
+
+    public int getVoteup_count() {
         return this.voteup_count;
     }
-    public void setVoting(int voting){
+
+    public void setVoting(int voting) {
         this.voting = voting;
     }
-    public int getVoting(){
+
+    public int getVoting() {
         return this.voting;
     }
-    public void setAuthor(Author author){
+
+    public void setAuthor(Author author) {
         this.author = author;
     }
-    public Author getAuthor(){
+
+    public Author getAuthor() {
         return this.author;
     }
-    public void setUrl(String url){
+
+    public void setUrl(String url) {
         this.url = url;
     }
-    public String getUrl(){
+
+    public String getUrl() {
         return this.url;
     }
-    public void setComment_permission(String comment_permission){
+
+    public void setComment_permission(String comment_permission) {
         this.comment_permission = comment_permission;
     }
-    public String getComment_permission(){
+
+    public String getComment_permission() {
         return this.comment_permission;
     }
-    public void setHas_column(boolean has_column){
+
+    public void setHas_column(boolean has_column) {
         this.has_column = has_column;
     }
-    public boolean getHas_column(){
+
+    public boolean getHas_column() {
         return this.has_column;
     }
-    public void setState(String state){
+
+    public void setState(String state) {
         this.state = state;
     }
-    public String getState(){
+
+    public String getState() {
         return this.state;
     }
-    public void setCreated(int created){
+
+    public void setCreated(int created) {
         this.created = created;
     }
-    public int getCreated(){
+
+    public int getCreated() {
         return this.created;
     }
-    public void setContent(String content){
+
+    public void setContent(String content) {
         this.content = content;
     }
-    public String getContent(){
+
+    public String getContent() {
         return this.content;
     }
-    public void setComment_count(int comment_count){
+
+    public void setComment_count(int comment_count) {
         this.comment_count = comment_count;
     }
-    public int getComment_count(){
+
+    public int getComment_count() {
         return this.comment_count;
     }
-    public void setImage_url(String image_url){
+
+    public void setImage_url(String image_url) {
         this.image_url = image_url;
     }
-    public String getImage_url(){
+
+    public String getImage_url() {
         return this.image_url;
     }
-    public void setTitle(String title){
+
+    public void setTitle(String title) {
         this.title = title;
     }
-    public String getTitle(){
+
+    public String getTitle() {
         return this.title;
     }
-    public void setCan_comment(Can_comment can_comment){
+
+    public void setCan_comment(Can_comment can_comment) {
         this.can_comment = can_comment;
     }
-    public Can_comment getCan_comment(){
+
+    public Can_comment getCan_comment() {
         return this.can_comment;
     }
-    public void setType(String type){
+
+    public void setType(String type) {
         this.type = type;
     }
-    public String getType(){
+
+    public String getType() {
         return this.type;
     }
-    public void setSuggest_edit(Suggest_edit suggest_edit){
+
+    public void setSuggest_edit(Suggest_edit suggest_edit) {
         this.suggest_edit = suggest_edit;
     }
-    public Suggest_edit getSuggest_edit(){
+
+    public Suggest_edit getSuggest_edit() {
         return this.suggest_edit;
     }
 

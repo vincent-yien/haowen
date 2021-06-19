@@ -1,23 +1,25 @@
-package com.vincent.kotlin1.bean;
+package com.vincent.kotlin1.bean.zhuanlan;
 
 import java.util.List;
 
-public class Root
-{
+public class Root {
     private Paging paging;
 
     private List<Data> data;
 
-    public void setPaging(Paging paging){
+    public void setPaging(Paging paging) {
         this.paging = paging;
     }
-    public Paging getPaging(){
+
+    public Paging getPaging() {
         return this.paging;
     }
-    public void setData(List<Data> data){
+
+    public void setData(List<Data> data) {
         this.data = data;
     }
-    public List<Data> getData(){
+
+    public List<Data> getData() {
         return this.data;
     }
 }

@@ -7,4 +7,497 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="font_color_alpha_80">#ccEEEEEE</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="transparent_100">#ff000000</color>
+    <color name="transparent_90">#e5000000</color>
+    <color name="transparent_80">#cc000000</color>
+    <color name="transparent_87">#cd000000</color>
+    <color name="transparent_60">#99000000</color>
+    <color name="transparent_50">#80000000</color>
+    <color name="transparent_20">#33000000</color>
+    <color name="transparent_15">#26000000</color>
+    <color name="transparent_8">#14000000</color>
+    <color name="episode_bg">#E6000000</color>
+    <!-- 透明度90% -->
+    <color name="episode_definition">#0FEEEEEE</color>
+    <color name="episode_bg_normal_stroke">#2AEEEEEE</color>
+    <color name="episode_bg_focus_stroke">#EEEEEE</color>
+    <color name="episode_selector_press">#99F25B00</color>
+    <color name="episode_bg_focus">#2AEEEEEE</color>
+    <color name="episode_bg_normal">#4CEEEEEE</color>
+    <color name="episode_definition_title">#66EEEEEE</color>
+    <!-- 透明度40% -->
+    <color name="episode_definition_word">#CCEEEEEE</color>
+    <!-- 透明度80% -->
+    <color name="episode_definition_word2">#4CEEEEEE</color>
+    <!-- 透明度30% -->
+    <color name="episode_definition_select">#CCF25B00</color>
+    <color name="player_seek_bar_bg">#1FEEEEEE</color>
+    <color name="player_seek_bar_progress_start">#E6FF9C00</color>
+    <!-- 透明度90% -->
+    <color name="player_seek_bar_progress_end">#E6F25B00</color>
+    <color name="player_pause_panel_bg">#C0000000</color>
+    <!-- 透明度70% -->
+    <color name="player_loading_progress_bg">#4DF86400</color>
+    <color name="player_loading_progress">#CCFFD200</color>
+    <color name="player_loading_progress_start">#9AFF6E02</color>
+    <!-- 透明度60% -->
+    <color name="player_loading_progress_end">#9AFFF000</color>
+    <!-- 透明度60% -->
+    <color name="player_next_part_bg">#CC000000</color>
+    <!-- 透明度90% -->
+
+    <color name="variety_item_bg">#66000000</color>
+    <color name="variety_item_press">#C0000000</color>
+    <color name="control_panel_bg">#33000000</color>
+    <!-- 透明度20% -->
+    <color name="back_color_alpha_20">#33000000</color>
+    <color name="back_color_alpha_50">#80000000</color>
+    <color name="back_color_alpha_70">#B2000000</color>
+    <color name="back_color_alpha_80">#cc000000</color>
+    <color name="back_color_alpha_85">#D9000000</color>
+
+    <color name="edittext_bg">#19000000</color>
+    <!-- 透明度10% -->
+
+    <color name="related_media_item_image_bg">#66747474</color>
+    <!-- 透明度40% -->
+
+    <color name="player_seek_bar_second_progress_bg">#5CEEEEEE</color>
+    <!-- 透明度60%  填充 60% -->
+
+    <color name="live_aphla_bg">#CC000000</color>
+    <!-- 透明度80% -->
+
+    <color name="dialog_btn_focus">#99d14b25</color>
+    <color name="dialog_btn_no_focus">#e6333333</color>
+    <color name="dialog_shadow_color">#99000000</color>
+    <!-- 对话框遮罩层颜色 透明度87% -->
+    <color name="dialog_area_color">#ef24252e</color>
+    <color name="dialog_title_color">#cceeeeee</color>
+    <color name="dialog_title_icon_color">#ffa900</color>
+    <color name="dialog_button_color">#0ceeeeee</color>
+    <color name="active_failed_dialog_color">#efa64017</color>
+    <color name="bg_gradient">#ff15141a</color>
+    <!-- 90% Title -->
+    <color name="app_common_title_color">#CCEEEEEE</color>
+    <!-- 90% Column Title -->
+    <color name="app_store_col_title_selected_color">#e5EEEEEE</color>
+    <!-- 80% Column Title -->
+    <color name="media_pay_title_color">#ccEEEEEE</color>
+    <!-- 30% Column Title -->
+    <color name="app_store_col_title_unselected_color">#4CEEEEEE</color>
+    <!-- 20% Column Title -->
+    <color name="media_pay_prompt_color">#33EEEEEE</color>
+    <color name="bg_black">#000000</color>
+    <!-- detailpage -->
+    <color name="detail_text_color">#99EEEEEE</color>
+    <color name="font_color_alpha_100">#ffEEEEEE</color>
+    <color name="font_color_alpha_90">#e5EEEEEE</color>
+    <color name="font_color_alpha_70">#b2FFFFFF</color>
+    <color name="font_color_alpha_60">#99EEEEEE</color>
+    <color name="font_color_alpha_50">#7FEEEEEE</color>
+    <color name="font_color_alpha_45">#73FFFFFF</color>
+    <color name="font_color_alpha_40">#66EEEEEE</color>
+    <color name="font_color_alpha_30">#4CEEEEEE</color>
+    <color name="font_color_alpha_20">#33EEEEEE</color>
+    <color name="font_color_alpha_18">#2EEEEEEE</color>
+    <color name="font_color_alpha_16">#28EEEEEE</color>
+    <color name="font_color_alpha_14">#23F1F1F1</color>
+    <color name="font_color_alpha_12">#1EEEEEEE</color>
+    <color name="font_color_alpha_10">#19EEEEEE</color>
+    <color name="font_color_alpha_8">#14EEEEEE</color>
+    <color name="font_color_alpha_6">#0fEEEEEE</color>
+    <color name="font_shadow_alpha_60">#9A000000</color>
+
+    <!-- home navigation definition -->
+    <color name="home_splash_backgroud">#15110F</color>
+    <color name="navigation_item_normal_color">#7FEEEEEE</color>
+    <color name="navigation_item_focus_color">#FFEEEEEE</color>
+    <color name="list_item_bg_color">#14EEEEEE</color>
+    <color name="gray6">#e6EEEEEE</color>
+    <color name="gray9">#e6EEEEEE</color>
+    <color name="purple">#800080</color>
+
+    <!-- wifi Settings -->
+    <color name="common_text_color">#ccEEEEEE</color>
+    <color name="common_unselected_text_color">#66EEEEEE</color>
+    <color name="wifi_item_connected_text_color">#991ee485</color>
+    <color name="wifi_item_state_text_color">#99EEEEEE</color>
+    <color name="wifi_info_text_color">#99EEEEEE</color>
+
+    <!-- filter history -->
+    <color name="filter_movie_color">#ffE88D2C</color>
+    <color name="filter_tv_color">#ffDC143C</color>
+    <color name="filter_cartoon_color">#ff4bac31</color>
+    <color name="filter_variety_color">#ff5747a3</color>
+
+    <!-- upgrade -->
+    <color name="upgrade_dialog_backgroud_color">#dd000000</color>
+    <color name="upgrade_dialog_area_color">#1a1a1a</color>
+
+    <!-- feedback -->
+    <color name="select_text_color">#f01122</color>
+    <color name="text_color">#66EEEEEE</color>
+    <color name="red_text_color">#f01122</color>
+    <color name="title_text_color">#ccEEEEEE</color>
+    <color name="background_color">#222327</color>
+    <color name="submit_button_color">#4dffffff</color>
+    <color name="submit_text_color">#cc000000</color>
+    <color name="hnit_text_color">#000000</color>
+    <color name="background_text_color">#EEEEEE</color>
+    <color name="background_popwindow_color">#1a1a1a</color>
+    <color name="tel_num_background_color">#33ffffff</color>
+    <color name="search_result_color">#e6ffffff</color>
+    <color name="history_enter_color">#0aEEEEEE</color>
+    <!-- home more card colors -->
+    <color name="home_more_movie_color">#ff852774</color>
+    <color name="home_more_tv_color">#ffc04e18</color>
+    <color name="home_more_cartoon_color">#ff2e8021</color>
+    <color name="home_more_news_color">#ff454e83</color>
+    <color name="home_more_4k_color">#ff5a2bb0</color>
+    <color name="home_more_varity_color">#ffcd4040</color>
+    <color name="home_more_history_color">#ff7c9613</color>
+    <color name="home_more_search_color">#ff3c8bce</color>
+    <color name="home_more_app_manager_color">#ffcf3221</color>
+    <color name="home_more_app_store_color">#ff33a112</color>
+
+    <!-- home card text color -->
+    <color name="home_card_text_color">#9428262c</color>
+    <!-- 58%透明度 -->
+
+
+    <!-- setting card colors -->
+    <color name="setting_signal_color">#fffa7843</color>
+    <color name="setting_accout_color">#ff2291e7</color>
+    <color name="setting_network_color">#ff73b920</color>
+    <color name="setting_player_color">#ff17c1c7</color>
+    <color name="setting_common_color">#ff5540a7</color>
+    <color name="setting_sound_color">#ff0bc284</color>
+    <color name="setting_manager_color">#ff1459c1</color>
+    <color name="setting_about_color">#ff12b1db</color>
+    <color name="card_border_color">#ff5d4845</color>
+
+    <!-- home card highlight -->
+    <color name="home_card_highlight_start_color">#ff000000</color>
+    <color name="home_card_highlight_end_color">#00000000</color>
+
+    <!-- 轮播频道列表字体颜色 -->
+    <color name="carousel_color_gray">#33eeeeee</color>
+    <color name="carousel_color_white">#ffffffff</color>
+    <color name="carousel_color_orange">#ffe85913</color>
+    <color name="carousel_color_tips">#ff292929</color>
+    <color name="carousel_dot_color_gray">#ff6f6f6f</color>
+    <color name="carousel_dot_color_blue">#ff00e4ff</color>
+    <color name="carousel_line_color">#99eeeeee</color>
+    <color name="carousel_title_progress_color_progress">#ffe85913</color>
+    <color name="carousel_title_progress_color_blackground">#ff2b2827</color>
+    <color name="carousel_menu_button_text_color">#ff222222</color>
+    <color name="carousel_menu_fav_text_color">#66686868</color>
+    <color name="play_loaing_view_bg">#FF262626</color>
+    <color name="carousel_channel_bg">#D91a1a1a</color>
+    <color name="carousel_program_bg">#A61a1a1a</color>
+
+    <!-- 个人中心 -->
+    <color name="account_bind">#63a211</color>
+    <color name="super_vip">#d93c2b</color>
+    <color name="exchange">#e68d00</color>
+    <color name="pay_record">#00529f</color>
+
+    <!-- new filter page -->
+    <color name="filter_item_focus_color">#fff5290d</color>
+    <color name="filter_item_normal_color">#ffffffff</color>
+    <color name="detail_tab_text_color">#99F1F1F1</color>
+    <color name="player_speed_text_color">#66F1F1F1</color>
+    <color name="player_stop_text_color">#CCF1F1F1</color>
+
+    <!-- 播放器广告 -->
+    <color name="player_ad_time_bg_color">#66000000</color>
+    <color name="player_ad_time_text_color">#ffc000</color>
+
+    <!-- message center -->
+    <color name="message_toast_text_color">#403e3e</color>
+    <color name="message_bubble_bg_color">#ff2020</color>
+
+    <!-- 领取金卡会员 -->
+    <color name="register_member_activity_bg">#2b385a</color>
+    <color name="register_member_step_normal">#08ffffff</color>
+    <color name="register_member_step_select">#ff2b385a</color>
+    <color name="register_member_edit_bg">#ff1c253b</color>
+    <color name="register_member_error_num">#ffff9c00</color>
+    <color name="register_member_time_color">#ffffa800</color>
+
+    <!-- 媒体页付费 -->
+    <color name="vip_vod_color">#66EEEEEE</color>
+    <color name="vip_free_color">#ffcc00</color>
+
+    <!-- 新闻播放专题 -->
+    <color name="special_playing_status_color">#e52fc7ff</color>
+    <color name="news_special_playing_status_color">#ff36d000</color>
+
+    <!-- 直播大厅 -->
+    <color name="live_hall_living_text_color">#ff00ff78</color>
+    <color name="live_hall_feature_title_bg">#DB1e1625</color>
+    <color name="gray">#808080</color>
+    <color name="preference_color">#ffffde00</color>
+    <color name="limmit_free_colr">#ff00fcff</color>
+
+    <!-- add by liuxingxin -->
+    <color name="score_rank_title_color">#132842</color>
+    <color name="score_rank_item_color">#eeeeee</color>
+    <color name="round_list_line">#29eeeeee</color>
+    <color name="round_list_font">#99eeeeee</color>
+    <color name="round_detail_page_color">#C71b213b</color>
+    <color name="round_detail_team_txt_color">#eeeeee</color>
+    <color name="round_detail_team_score_color">#99eeeeee</color>
+    <color name="round_detail_time_txt_color">#99eeeeee</color>
+    <color name="round_detail_time_boder_color">#1Aeeeeee</color>
+    <color name="round_detail_btn_txt_color">#eee</color>
+    <color name="round_detail_btn_txt_unslect_color">#99eeeeee</color>
+    <color name="round_detail_btn_select_solid">#006ad4</color>
+    <color name="round_detail_btn_select_border">#eee</color>
+    <color name="round_detail_btn_unselect_solid">#1Aeeeeee</color>
+    <color name="round_detail_onair_txt">#00ff18</color>
+    <color name="round_detail_unbegin_txt">#CCEEEEEE</color>
+    <color name="round_detail_end_txt">#33eeeeee</color>
+    <color name="sport_home_match_background">#004a94</color>
+    <color name="sport_home_match_vs_background">#33eeeeee</color>
+    <color name="sport_home_match_name_background">#66eeeeee</color>
+    <color name="sport_home_match_livetips_background">#CCeeeeee</color>
+    <color name="sport_home_match_onair">#00e942</color>
+    <color name="pay_la_txt_unselector_solid">#0F000000</color>
+    <color name="pay_la_txt_unselector_stroke">#33eeeeee</color>
+    <color name="pay_la_txt_selector_solid">#1b74e1</color>
+    <color name="pay_la_txt_selector_stroke">#eee</color>
+    <color name="league_match_title_background">#E6eeeeee</color>
+    <color name="league_match_title_txt">#FF122A4D</color>
+    <color name="league_match_content_odd_background">#E60d2445</color>
+    <color name="league_match_content_even_background">#E60a1d37</color>
+    <color name="league_match_content_team_txt">#CCeeeeee</color>
+    <color name="league_match_content_time_txt">#99eeeeee</color>
+    <color name="league_match_content_timehint_txt">#eeeeee</color>
+    <color name="league_match_content_timehint_onair">#00da4d</color>
+    <color name="league_match_content_timehint_mark">#eee</color>
+    <color name="league_match_content_timehint_end">#99eeeeee</color>
+    <color name="league_match_content_timehint_boder">#1Aeeeeee</color>
+    <!-- end liuxingxin -->
+    <color name="vip_player_score">#f6d000</color>
+
+    <!-- launcher 2.0 start -->
+    <!-- common -->
+    <color name="activity_default_bg">#2C325F</color>
+    <color name="vip_media_buy_single_bg">#dd6800</color>
+    <color name="vip_media_buy_package_bg_1">#04814a</color>
+    <color name="vip_media_buy_package_bg_2">#018082</color>
+    <color name="vip_media_buy_package_bg_3">#4749ba</color>
+    <color name="vip_media_buy_package_bg_4">#0088bb</color>
+    <color name="vip_media_buy_package_bg_5">#608b1d</color>
+    <color name="vip_media_buy_vip_bg_1">#be391f</color>
+    <color name="vip_media_buy_vip_bg_2">#b82839</color>
+    <color name="vip_media_buy_vip_bg_3">#c12060</color>
+    <color name="vip_media_buy_vip_bg_4">#7a1580</color>
+    <color name="vip_media_buy_morevip_bg_5">#c23700</color>
+    <color name="vip_media_buy_getvip_bg_6">#6ba61f</color>
+    <color name="vip_media_ticket_bg">#6938a5</color>
+    <color name="pay_switch_blue">#006ec3</color>
+    <color name="pay_switch_green">#00a000</color>
+    <color name="pay_switch_orange">#aa4c00</color>
+
+    <!-- home -->
+
+    <color name="white_alpha_100">#ffffffff</color>
+    <color name="white_alpha_90">#e5ffffff</color>
+    <color name="white_alpha_80">#ccffffff</color>
+    <color name="white_alpha_70">#b2ffffff</color>
+    <color name="white_alpha_65">#a6ffffff</color>
+    <color name="white_alpha_60">#99ffffff</color>
+    <color name="white_alpha_50">#80ffffff</color>
+    <color name="white_alpha_45">#73ffffff</color>
+    <color name="white_alpha_40">#66ffffff</color>
+    <color name="white_alpha_30">#4cffffff</color>
+    <color name="white_alpha_20">#33ffffff</color>
+    <color name="white_alpha_16">#29ffffff</color>
+    <color name="white_alpha_12">#1fffffff</color>
+    <color name="white_alpha_10">#19ffffff</color>
+    <color name="white_alpha_8">#14ffffff</color>
+    <color name="popbar_default_bg">#f5242845</color>
+
+    <!-- launcher 2.0 end -->
+    <!-- fun menu start -->
+    <color name="tv_fun_text_color_alpha_100">#ffeeeeee</color>
+    <color name="tv_fun_text_color_alpha_80">#cceeeeee</color>
+    <color name="tv_fun_text_color_alpha_40">#66eeeeee</color>
+    <color name="tv_fun_text_color_alpha_50">#80eeeeee</color>
+    <!-- fun menu end -->
+
+    <color name="discount2">#00fcff</color>
+    <color name="discount3">#ffde00</color>
+
+    <color name="retrieve_tab_icon_focus_color">#ffcf3005</color>
+    <color name="ntt_antiplay_default">#003972</color>
+    <color name="sport_match_more_txt_color">#CC51F0DF</color>
+    <color name="sport_match_more_arrow_color">#6651F0DF</color>
+    <color name="black_alpha_percent60">#99000000</color>
+    <color name="fa_round_title_color">#eeeeee</color>
+
+    <color name="retrieve_movie_home_cell_focus_color">#ccdc3400</color>
+    <color name="retrieve_movie_home_cell_normal_color">#99000000</color>
+    <color name="color_translucent_70">#B3000000</color>
+    <color name="player_menu_bg_color">#e5141718</color>
+    <color name="player_menu_playing_item_color">#ff2f9fff</color>
+    <color name="orange_color">#fff600</color>
+    <color name="black_40">#66000000</color>
+    <color name="black_35">#5a000000</color>
+
+    <!-- children  -->
+    <color name="children_focus_bg_color">#e13636</color>
+    <color name="children_big_poster_text_bg_color">#e6d2efff</color>
+    <color name="children_big_poster_text_bg_focus_color">#e9356b</color>
+    <color name="children_big_poster_text_color">#005585</color>
+
+    <!-- new rank home -->
+    <color name="rank_scroll_list_item_bg_color">#16ffffff</color>
+    <color name="rank_scroll_list_item_bg_focused_color">#4b297b</color>
+
+    <!-- NBA -->
+    <color name="nba_home_icon_color">#185ce3</color>
+    <color name="nba_home_carousel_title_bg_color">#2e2e2e</color>
+    <color name="nba_home_calendar_title_bg_color">#161616</color>
+    <color name="nba_home_calendar_item_odd_bg_color">#202020</color>
+    <color name="nba_home_calendar_item_even_bg_color">#1a1a1a</color>
+    <color name="nba_calendar_title_color">#2a70fc</color>
+    <color name="nba_subscribe">#e5003e</color>
+
+    <color name="window_player_progress_color">#ef4916</color>
+
+    <color name="home_tv_bg">#ef315bb1</color>
+    <color name="recommend_bg_color">#010e4b</color>
+    <color name="recommend_item_title_bg">#474151</color>
+    <color name="recommend_item_title_color">#99eeeeee</color>
+    <color name="recommend_item_score_color">#CCdc4127</color>
+    <color name="game_rank_title">#bd2dbf</color>
+    <color name="game_rank_item_color">#8f1691</color>
+    <color name="game_rank_app_color">#cceeeeee</color>
+
+    <color name="media_item_score_color">#ffd928</color>
+
+    <color name="setting_account_entry_bg_color">#eb7723</color>
+    <color name="setting_qrcode_entry_bg_color">#4f8eed</color>
+    <color name="kankannews_bg">#ff01264b</color>
+    <color name="shopping_item_price_color">#f1f1f1</color>
+    <color name="detail_score_normal_color">#FFE54C20</color>
+    <color name="detail_score_children_color">#FFFFEA00</color>
+    <color name="news_calendar_text_color">#99DFF0FF</color>
+    <color name="shopping_detail_price_color">#ff570d</color>
+
+    <!-- add by liuxingxin for 3.5 体育通用模版 -->
+    <color name="round_table_detail_item_bg">#C7e5e5e5</color>
+    <color name="round_table_detail_team_name_color">#2a2039</color>
+    <color name="round_table_detail_team_winner">#ac0000</color>
+    <color name="round_table_detail_team_loser">#038d00</color>
+    <color name="round_table_detail_team_vs">#992a2039</color>
+    <color name="round_table_detail_time_color">#2a2039</color>
+    <color name="round_table_detail_item_live">#038d00</color>
+    <color name="round_table_detail_item_subscribe">#ac0000</color>
+    <color name="round_table_detail_item_unbegin">#992a2039</color>
+    <!-- add by liuxingxin for 3.5 体育通用模版End -->
+    <!-- add by liuxingxin for 3.5体育增加首页增加预约 点击预约文字提示 -->
+    <color name="sporthome_clicksub">#66eeeeee</color>
+    <color name="sporthome_unsub">#fec720</color>
+    <!-- add by liuxingxin for 3.5体育增加首页增加预约 点击预约文字提示 End-->
+
+    <color name="waterfall_aword_text_color">#99333333</color>
+    <!-- 3.5瀑布流需求 -->
+    <color name="livewaterfall_bg">#252535</color>
+    <color name="livewater_agtable_item_bg">#E623235c</color>
+    <color name="livewater_title_bg">#0066ff</color>
+    <color name="livewater_agtable_item_winner">#1fd434</color>
+    <color name="livewater_agtable_item_loser">#ea5757</color>
+    <color name="livewater_agtable_item_onair">#09b500</color>
+    <color name="livewater_agtable_item_subscribe">#ffde00</color>
+    <color name="livewater_agtable_item_lookback">#99eeeeee</color>
+    <color name="livewaterfall_window_bg">#1c1d27</color>
+    <!-- 3.5瀑布流需求End -->
+    <color name="setting_division_bg">#13f1f1f1</color>
+
+    <color name="tv_weather_text_color">#fafafa</color>
+    <color name="tv_weather__date_text_color">#888888</color>
+    <color name="tv_weather__info_text_color">#b2b4b5</color>
+
+    <color name="calendar_city_alpha_80_color">#cc231a1a</color>
+    <color name="calendar_city_alpha_20_color">#33231a1a</color>
+
+    <color name="calendar_sunday_alpha_100_color">#ffa200</color>
+    <color name="calendar_sunday_alpha_80_color">#ccffa200</color>
+    <color name="calendar_sunday_alpha_40_color">#66ffa200</color>
+    <color name="calendar_sunday_alpha_20_color">#33ffa200</color>
+
+    <color name="calendar_common_alpha_40_color">#664f4848</color>
+    <color name="sign_reward_ticket_text_color">#fad65b</color>
+
+    <color name="score_text_color">#ffa128</color>
+
+    <!-- 教育日历 -->
+    <color name="edu_weekname_color">#023075</color>
+    <color name="edu_study_time_color">#FF00337E</color>
+    <color name="edu_no_study_color">#FFF0D01C</color>
+    <color name="coupon_aword_text_color">#FFFFBE33</color>
+
+    <color name="pay_end_title_text_color">#FFFFCF6B</color>
+    <color name="pay_end_subtitle_text_color">#FFF0BA49</color>
+    <color name="order_gived_color">#FFFF4200</color>
+
+    <color name="shopping_qrcode_bg_color">#FFEA5404</color>
+    <color name="shopping_qrcode_title_color">#FFEC6B26</color>
+    <color name="shopping_carousel_activity_bg_color">#FF363636</color>
+    <color name="shopping_carousel_fullsceen_tips_color">#FFF1F1F1</color>
+    <color name="shopping_carousel_player_bg_color">#FFFF6000</color>
+    <color name="shopping_carousel_price_color">#FFF75159</color>
+    <color name="shopping_carousel_price_unit_color">#4CF75159</color>
+    <color name="shopping_carousel_title_select_bg_color">#FFF45158</color>
+    <color name="shopping_carousel_title_playing_color">#FF80D326</color>
+    <color name="gift_give_color">#FF713035</color>
+    <color name="digital_clock_tips_color">#FFFEFEFE</color>
+
+    <color name="net_player_layout_bg">#211D32</color>
+    <color name="check_network_text_color">#66eeeeee</color>
+    <color name="check_network_checking_color">#cceeeeee</color>
+    <color name="check_network_ok_color">#ff1f7a15</color>
+    <color name="check_network_timeout_color">#ffff7d26</color>
+    <color name="check_network_failed_color">#ffcc3434</color>
+    <color name="edu_plan_yellow_color">#ffdb5c</color>
+    <color name="edu_activity_bg_color">#2361cd</color>
+    <color name="edu_rank_bar_bg_color">#0e4ead</color>
+    <color name="edu_rank_point_bg_color">#990e4ead</color>
+    <color name="edu_rank_bar_text_color">#fabf20</color>
+    <color name="edu_rank_own_color">#f0ce11</color>
+    <color name="edu_rank_next_user_bg_color">#ccf55353</color>
+    <color name="task_finish_progress_color">#4ac569</color>
+    <color name="red_packet_count_text_color">#FFF78E06</color>
+    <color name="red_packet_timer_text_color">#FFFFC600</color>
+    <color name="red_packet_prize_text_color">#FFF00101</color>
+    <color name="red_packet_money_text_color">#FFFFCC00</color>
+    <color name="setting_lock_dialog_bg">#99000000</color>
+    <color name="video_list_item_bg">#E44C1D</color>
+    <color name="skin_bg_color">#216bd6</color>
+    <color name="detail_vip_tag_color">#FFFCC23B </color>
+
+    <!-- iqiy account -->
+    <color name="iqiy_logout_dialog_bg_color">#472571</color>
+
+    <!-- up coming floor -->
+    <color name="up_coming_title_color_normal">#73F6FAFF</color>
+    <color name="up_coming_title_color_select">#F6FAFF</color>
+
+    <color name="eposide_tip_name_color">#321B00</color>
+
+    <color name="player_menu_function_txt_focus">#FFFFFF</color>
+    <color name="player_menu_function_txt_select">#FF382E</color>
+    <color name="player_menu_function_txt_normal">#b3ffffff</color>
+
+    <color name="star_rangking_item">#14FFFFFF</color>
+    <!--黑色,不透明 10%-->
+    <color name="app_white_not_alpha_10">#1affffff</color>
 </resources>

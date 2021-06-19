@@ -1,31 +1,14 @@
 package com.vincent.kotlin1.ui
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import android.widget.ImageView
-import android.widget.LinearLayout
 import android.widget.TextView
-import androidx.fragment.app.FragmentManager
 import androidx.viewpager.widget.ViewPager
-import butterknife.BindView
-import butterknife.ButterKnife
-import com.google.gson.Gson
-import com.google.gson.JsonParser
 import com.vincent.kotlin1.R
-import com.vincent.kotlin1.bean.Data
-import com.vincent.kotlin1.synccallback.HttpCallBack
-import com.vincent.kotlin1.util.HttpConstans
-import com.vincent.kotlin1.util.HttpUtil
 import com.vincent.kotlin1.widget.MainFragmentAdapter
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.bottom_box_item.*
-import org.json.JSONObject
-import java.util.*
-import java.util.zip.Inflater
 
 class MainActivity : BaseActivity(), View.OnClickListener {
 

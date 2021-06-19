@@ -1,6 +1,6 @@
-package com.vincent.kotlin1.bean;
-public class Suggest_edit
-{
+package com.vincent.kotlin1.bean.zhuanlan;
+
+public class Suggest_edit {
     private boolean status;
 
     private String url;
@@ -11,34 +11,43 @@ public class Suggest_edit
 
     private String title;
 
-    public void setStatus(boolean status){
+    public void setStatus(boolean status) {
         this.status = status;
     }
-    public boolean getStatus(){
+
+    public boolean getStatus() {
         return this.status;
     }
-    public void setUrl(String url){
+
+    public void setUrl(String url) {
         this.url = url;
     }
-    public String getUrl(){
+
+    public String getUrl() {
         return this.url;
     }
-    public void setReason(String reason){
+
+    public void setReason(String reason) {
         this.reason = reason;
     }
-    public String getReason(){
+
+    public String getReason() {
         return this.reason;
     }
-    public void setTip(String tip){
+
+    public void setTip(String tip) {
         this.tip = tip;
     }
-    public String getTip(){
+
+    public String getTip() {
         return this.tip;
     }
-    public void setTitle(String title){
+
+    public void setTitle(String title) {
         this.title = title;
     }
-    public String getTitle(){
+
+    public String getTitle() {
         return this.title;
     }
 }

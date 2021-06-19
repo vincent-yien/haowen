@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_460px">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/slideshow"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_470px"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_10px"
+        android:layout_below="@id/slideshow"
+        android:background="@color/black"/>
+
+    <LinearLayout
+        android:id="@+id/slide_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_370px"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"/>
+
+</RelativeLayout>

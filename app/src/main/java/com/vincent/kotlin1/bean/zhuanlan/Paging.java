@@ -1,7 +1,6 @@
-package com.vincent.kotlin1.bean;
+package com.vincent.kotlin1.bean.zhuanlan;
 
-public class Paging
-{
+public class Paging {
     private boolean is_end;
 
     private int totals;
@@ -12,34 +11,43 @@ public class Paging
 
     private String next;
 
-    public void setIs_end(boolean is_end){
+    public void setIs_end(boolean is_end) {
         this.is_end = is_end;
     }
-    public boolean getIs_end(){
+
+    public boolean getIs_end() {
         return this.is_end;
     }
-    public void setTotals(int totals){
+
+    public void setTotals(int totals) {
         this.totals = totals;
     }
-    public int getTotals(){
+
+    public int getTotals() {
         return this.totals;
     }
-    public void setPrevious(String previous){
+
+    public void setPrevious(String previous) {
         this.previous = previous;
     }
-    public String getPrevious(){
+
+    public String getPrevious() {
         return this.previous;
     }
-    public void setIs_start(boolean is_start){
+
+    public void setIs_start(boolean is_start) {
         this.is_start = is_start;
     }
-    public boolean getIs_start(){
+
+    public boolean getIs_start() {
         return this.is_start;
     }
-    public void setNext(String next){
+
+    public void setNext(String next) {
         this.next = next;
     }
-    public String getNext(){
+
+    public String getNext() {
         return this.next;
     }
 }
