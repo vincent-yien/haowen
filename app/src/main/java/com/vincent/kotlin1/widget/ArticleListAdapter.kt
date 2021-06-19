@@ -15,6 +15,7 @@ import com.vincent.kotlin1.R
 import com.vincent.kotlin1.bean.articleBean.ArticleBaseBean
 import com.vincent.kotlin1.bean.tuijian.News
 import com.vincent.kotlin1.bean.tuijian.Stories
+import com.vincent.kotlin1.util.ImageLoadUtil
 
 private const val SLIDE = 0;
 private const val NORMAL = 1;
@@ -78,7 +79,8 @@ class ArticleListAdapter(context : Context) : RecyclerView.Adapter<ArticleListAd
     override fun onBindViewHolder(holder : BaseArticItemHolder, position: Int) {
         if(holder is ArticleItemHolder) {
             var stories = mData[position] as Stories
-            mContext?.let { Glide.with(it).load(stories.images[0]).into(holder.pic) }
+            mContext?.let { ImageLoadUtil.displayImageCenter(holder.pic,stories.images[0],
+                mContext!!,R.drawable.ic_launcher_background) }
             holder.title.text = stories.title
         }else if(holder is ArticSlideHolder){
             var stories = mData[position] as News
