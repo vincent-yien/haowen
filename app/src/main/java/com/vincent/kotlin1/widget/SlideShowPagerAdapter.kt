@@ -1,5 +1,6 @@
 package com.vincent.kotlin1.widget
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,6 +11,7 @@ import com.vincent.kotlin1.R
 import com.vincent.kotlin1.bean.articleBean.ArticleBaseBean
 import com.vincent.kotlin1.bean.tuijian.News
 import com.vincent.kotlin1.bean.tuijian.Stories
+import com.vincent.kotlin1.util.ArticleUtil
 import com.vincent.kotlin1.util.ImageLoadUtil
 
 class SlideShowPagerAdapter(mData: ArrayList<Stories>) : PagerAdapter() {
@@ -42,6 +44,11 @@ class SlideShowPagerAdapter(mData: ArrayList<Stories>) : PagerAdapter() {
         ImageLoadUtil.displayImageCenter(imageView,stories.images[0],container.context,R.drawable.ic_launcher_background)
         textView.text = stories.title
         container.addView(view)
+        view.setOnClickListener(object : View.OnClickListener{
+            override fun onClick(v: View?) {
+                ArticleUtil.goLoadArticle(mData[position].url,container.context)
+            }
+        })
         return view
     }
 

@@ -14,6 +14,7 @@ class ArticleActivity : BaseActivity(){
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_acticle)
         loadData(intent)
     }
 
@@ -26,7 +27,6 @@ class ArticleActivity : BaseActivity(){
 
     fun loadData(intent : Intent){
         var url = intent.getStringExtra("url")
-        Log.d("RANWS","utl:"+url)
         if (webView == null){
             webView = findViewById(R.id.article)
         }
