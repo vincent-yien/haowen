@@ -5,7 +5,7 @@ import android.app.Application
 class BaseApplication : Application() {
 
     companion object {
-        var sInstance : BaseApplication  ?= null
+        private var sInstance : BaseApplication  ?= null
 
         public fun getInstance(): BaseApplication? {
             return sInstance

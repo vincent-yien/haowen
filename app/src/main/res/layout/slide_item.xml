@@ -7,7 +7,7 @@
     <ImageView
         android:id="@+id/slide_item_image"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:scaleType="centerCrop"/>
 
     <TextView
@@ -16,8 +16,9 @@
         android:layout_height="wrap_content"
         android:textSize="@dimen/dimen_70px"
         android:textColor="@color/black"
-        android:layout_marginTop="@dimen/dimen_240px"
+        android:layout_marginTop="@dimen/dimen_300px"
         android:maxLines="2"
-        android:ellipsize="end"/>
+        android:ellipsize="end"
+        android:background="@color/transparent"/>
 
 </RelativeLayout>

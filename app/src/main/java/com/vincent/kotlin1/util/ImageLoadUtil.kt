@@ -23,7 +23,7 @@ class ImageLoadUtil {
             if (TextUtils.isEmpty(url + "")) {
                 imageview.setImageResource(defultPic);
             } else {
-                var options = RequestOptions().diskCacheStrategy(DiskCacheStrategy.RESOURCE)
+                var options = RequestOptions().diskCacheStrategy(DiskCacheStrategy.RESOURCE).skipMemoryCache(true)
                     .placeholder(defultPic).error(defultPic).dontAnimate();
                 Glide.with(context).load(url).apply(options)
                     .into(object : SimpleTarget<Drawable>() {

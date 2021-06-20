@@ -15,12 +15,13 @@ import com.vincent.kotlin1.R
 import com.vincent.kotlin1.bean.articleBean.ArticleBaseBean
 import com.vincent.kotlin1.bean.tuijian.News
 import com.vincent.kotlin1.bean.tuijian.Stories
+import com.vincent.kotlin1.util.ArticleUtil
 import com.vincent.kotlin1.util.ImageLoadUtil
 
 private const val SLIDE = 0;
 private const val NORMAL = 1;
 private const val UNKNOW = -1;
-class ArticleListAdapter(context : Context) : RecyclerView.Adapter<ArticleListAdapter.BaseArticItemHolder>() {
+class ArticleListAdapter(context : Context) : RecyclerView.Adapter<ArticleListAdapter.BaseArticItemHolder>() , View.OnClickListener{
 
     private var mContext : Context ?= null
     private var mData : ArrayList<Any> = ArrayList()
@@ -60,10 +61,10 @@ class ArticleListAdapter(context : Context) : RecyclerView.Adapter<ArticleListAd
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) : BaseArticItemHolder {
         return if(viewType == SLIDE){
-//            if(mSlideHolder == null){
+            if(mSlideHolder == null){
                 val view = LayoutInflater.from(parent.context).inflate(R.layout.article_slide,parent,false)
                 mSlideHolder = ArticSlideHolder(view)
-//            }
+            }
             mSlideHolder!!
         }else {
             val view = LayoutInflater.from(parent.context)
@@ -82,13 +83,18 @@ class ArticleListAdapter(context : Context) : RecyclerView.Adapter<ArticleListAd
             mContext?.let { ImageLoadUtil.displayImageCenter(holder.pic,stories.images[0],
                 mContext!!,R.drawable.ic_launcher_background) }
             holder.title.text = stories.title
+            holder.itemView.setOnClickListener(object : View.OnClickListener{
+                override fun onClick(v: View?) {
+                    mContext?.let { ArticleUtil.goLoadArticle(stories.url, it) }
+                }
+            })
         }else if(holder is ArticSlideHolder){
             var stories = mData[position] as News
             holder.setAdapter()
-            holder.mAdapter.addData(stories)
+            holder.mAdapter.setData(stories.news)
             holder.mAdapter.notifyDataSetChanged()
             var slideBox : LinearLayout = holder.itemView.findViewById(R.id.slide_box)
-//            slideBox.removeAllViews()
+            slideBox.removeAllViews()
             for (i in stories.news.indices){
                 var point = View(holder.itemView.context)
                 if(i == 0){
@@ -111,6 +117,16 @@ class ArticleListAdapter(context : Context) : RecyclerView.Adapter<ArticleListAd
         }
     }
 
+    override fun onViewRecycled(holder: BaseArticItemHolder) {
+        super.onViewRecycled(holder)
+        if(holder is ArticleItemHolder){
+            holder as ArticleItemHolder
+        }else if(holder is ArticSlideHolder){
+            holder as ArticSlideHolder
+        }
+        mContext?.let { Glide.with(it).clear(holder.itemView) }
+    }
+
     open class BaseArticItemHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
 
     }
@@ -124,7 +140,7 @@ class ArticleListAdapter(context : Context) : RecyclerView.Adapter<ArticleListAd
     }
 
     class ArticSlideHolder(itemView: View) : BaseArticItemHolder(itemView) {
-        var mSlideDatas : ArrayList<ArticleBaseBean> = ArrayList()
+        var mSlideDatas : ArrayList<Stories> = ArrayList()
         var slideView : ViewPager = itemView.findViewById(R.id.slideshow)
         var mAdapter : SlideShowPagerAdapter = SlideShowPagerAdapter(mSlideDatas);
 
@@ -142,7 +158,11 @@ class ArticleListAdapter(context : Context) : RecyclerView.Adapter<ArticleListAd
                     var slideBox : LinearLayout = itemView.findViewById(R.id.slide_box)
                     var viewPrevSelect = slideBox.getChildAt(mSelectPointIndex)
                     viewPrevSelect.setBackgroundResource(R.drawable.point_normal)
-                    mSelectPointIndex = position
+//                    if(position >= mSlideDatas.size){
+//                        mSelectPointIndex = 0
+//                    }else {
+                        mSelectPointIndex = position
+//                    }
                     var view : View = slideBox.getChildAt(mSelectPointIndex)
                     view.setBackgroundResource(R.drawable.point_selected)
                 }
@@ -152,6 +172,10 @@ class ArticleListAdapter(context : Context) : RecyclerView.Adapter<ArticleListAd
 
             })
         }
+
+    }
+
+    override fun onClick(v: View?) {
 
     }
 

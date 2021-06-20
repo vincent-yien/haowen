@@ -1,5 +1,6 @@
 package com.vincent.kotlin1.ui.fragment
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -8,13 +9,15 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager.widget.ViewPager
+import com.bumptech.glide.Glide
 import com.google.gson.Gson
 import com.google.gson.JsonParser
+import com.vincent.kotlin1.BaseApplication
 import com.vincent.kotlin1.R
-import com.vincent.kotlin1.bean.articleBean.ArticleBaseBean
 import com.vincent.kotlin1.bean.tuijian.News
 import com.vincent.kotlin1.bean.tuijian.Stories
 import com.vincent.kotlin1.synccallback.HttpCallBack
+import com.vincent.kotlin1.ui.ArticleActivity
 import com.vincent.kotlin1.util.HttpConstans
 import com.vincent.kotlin1.util.HttpUtil
 import com.vincent.kotlin1.widget.ArticleListAdapter
@@ -56,17 +59,25 @@ class ArticleFragment : Fragment(){
         mRecyclerView.postDelayed(Runnable { kotlin.run {  loadArticleList(HttpConstans.NEWSDATE+getDate(false))} },2)
 
         mRecyclerView.addOnScrollListener(object : RecyclerView.OnScrollListener() {
-            override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
+            @Synchronized override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
                 super.onScrolled(recyclerView, dx, dy)
-                var layoutManager : LinearLayoutManager = recyclerView.layoutManager as LinearLayoutManager
-                if (layoutManager.findLastVisibleItemPosition() - layoutManager.itemCount < 2){
-                    loadArticleList(HttpConstans.NEWSDATE+getDate(true))
+            }
+
+            override fun onScrollStateChanged(recyclerView: RecyclerView, newState: Int) {
+                if (newState == RecyclerView.SCROLL_STATE_IDLE){
+                    BaseApplication.getInstance()?.let { Glide.with(it).resumeRequests() }
+                }else if(newState == RecyclerView.SCROLL_STATE_DRAGGING || newState == RecyclerView.SCROLL_STATE_SETTLING){
+                    BaseApplication.getInstance()?.let { Glide.with(it).pauseAllRequests() }
+                    var layoutManager : LinearLayoutManager = recyclerView.layoutManager as LinearLayoutManager
+                    if (layoutManager.itemCount - layoutManager.findLastVisibleItemPosition() <= 1){
+                        loadArticleList(HttpConstans.NEWSDATE+getDate(true))
+                    }
                 }
             }
         })
     }
 
-    private fun loadArticleList(url : String) {
+    @Synchronized private fun loadArticleList(url : String) {
 
         HttpUtil.sendGet(object : HttpCallBack {
             override fun onSuccess(obj: String) {
@@ -123,7 +134,6 @@ class ArticleFragment : Fragment(){
 
     }
 
-    @SuppressLint("SimpleDateFormat")
     private fun getDate(isAdd : Boolean) : String {
 
        //new一个Calendar类,把Date放进去
@@ -134,17 +144,6 @@ class ArticleFragment : Fragment(){
         }else{
             return sdf.format(Date())
         }
-
     }
 
-//    public class ScrollerListener() : RecyclerView.OnScrollListener(){
-//        override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
-//            super.onScrolled(recyclerView, dx, dy)
-//
-//        }
-//
-//        override fun onScrollStateChanged(recyclerView: RecyclerView, newState: Int) {
-//            super.onScrollStateChanged(recyclerView, newState)
-//        }
-//    }
 }

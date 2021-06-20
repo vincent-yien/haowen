@@ -4,23 +4,19 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
-import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.viewpager.widget.PagerAdapter
-import com.bumptech.glide.Glide
-import com.vincent.kotlin1.BaseApplication
 import com.vincent.kotlin1.R
 import com.vincent.kotlin1.bean.articleBean.ArticleBaseBean
 import com.vincent.kotlin1.bean.tuijian.News
 import com.vincent.kotlin1.bean.tuijian.Stories
 import com.vincent.kotlin1.util.ImageLoadUtil
-import org.w3c.dom.Text
 
-class SlideShowPagerAdapter(mData: ArrayList<ArticleBaseBean>) : PagerAdapter() {
+class SlideShowPagerAdapter(mData: ArrayList<Stories>) : PagerAdapter() {
 
-    private var mData : ArrayList<ArticleBaseBean> = mData
+    private var mData : ArrayList<Stories> = mData
 
-    public fun setData(data: ArrayList<ArticleBaseBean>){
+    public fun setData(data: java.util.ArrayList<Stories>){
         mData = data;
     }
 
@@ -39,11 +35,10 @@ class SlideShowPagerAdapter(mData: ArrayList<ArticleBaseBean>) : PagerAdapter() 
     }
 
     override fun instantiateItem(container: ViewGroup, position: Int): Any {
-        var stories = mData[position] as Stories
+        var stories = mData[position]
         var view = LayoutInflater.from(container.context).inflate(R.layout.slide_item,container,false)
         var imageView = view.findViewById<ImageView>(R.id.slide_item_image)
         var textView = view.findViewById<TextView>(R.id.slide_item_text)
-//        Glide.with(container.context).load(stories.images[0]).into(imageView)
         ImageLoadUtil.displayImageCenter(imageView,stories.images[0],container.context,R.drawable.ic_launcher_background)
         textView.text = stories.title
         container.addView(view)

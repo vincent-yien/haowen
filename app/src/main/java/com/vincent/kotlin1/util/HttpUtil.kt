@@ -1,5 +1,6 @@
 package com.vincent.kotlin1.util
 
+import android.util.Log
 import com.vincent.kotlin1.synccallback.HttpCallBack
 import okhttp3.*
 import java.io.IOException

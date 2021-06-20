@@ -2,7 +2,7 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="@dimen/dimen_460px">
+    android:layout_height="@dimen/dimen_500px">
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/slideshow"
@@ -19,7 +19,7 @@
         android:id="@+id/slide_box"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/dimen_370px"
+        android:layout_marginTop="@dimen/dimen_410px"
         android:orientation="horizontal"
         android:gravity="center_horizontal"/>
 
