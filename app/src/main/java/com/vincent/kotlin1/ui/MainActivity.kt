@@ -51,6 +51,10 @@ class MainActivity : BaseActivity(), View.OnClickListener {
                     resources.getText(R.string.text) ->
                         mainViewPager.currentItem = 0
 
+                    resources.getText(R.string.picture) ->
+                        mainViewPager.currentItem = 1
+
+
                 }
             }
         }
