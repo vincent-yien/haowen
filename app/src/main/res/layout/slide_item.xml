@@ -14,9 +14,10 @@
         android:id="@+id/slide_item_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/dimen_70px"
+        android:textSize="@dimen/dimen_120px"
         android:textColor="@color/black"
         android:layout_marginTop="@dimen/dimen_300px"
+        android:layout_marginStart="@dimen/dimen_108px"
         android:maxLines="2"
         android:ellipsize="end"
         android:background="@color/transparent"/>

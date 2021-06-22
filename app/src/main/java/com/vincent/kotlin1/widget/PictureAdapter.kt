@@ -8,22 +8,19 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.vincent.kotlin1.R
+import com.vincent.kotlin1.bean.pictureBean.Picture
 import com.vincent.kotlin1.util.ImageLoadUtil
 
 class PictureAdapter : RecyclerView.Adapter<PictureAdapter.PictureHolder>(){
 
-    private var mData : ArrayList<String> = ArrayList<String>()
+    private var mData : ArrayList<Picture> = ArrayList<Picture>()
 
-    public fun setData(array : ArrayList<String>){
-        if(array != null){
-            mData = array
-        }
+    public fun setData(array : ArrayList<Picture>){
+        mData = array
     }
 
-    public fun addData(array: ArrayList<String>){
-        if(array != null){
-            mData.addAll(array)
-        }
+    public fun addData(array: ArrayList<Picture>){
+        mData.addAll(array)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PictureHolder {
@@ -36,7 +33,7 @@ class PictureAdapter : RecyclerView.Adapter<PictureAdapter.PictureHolder>(){
     }
 
     override fun onBindViewHolder(holder: PictureHolder, position: Int) {
-        ImageLoadUtil.displayImageCenter(holder.picture,mData[position],holder.itemView.context,R.drawable.ic_launcher_background)
+        ImageLoadUtil.displayImageCenterThumbnail(holder.picture,mData[position].download_url,holder.itemView.context,R.drawable.ic_launcher_background)
     }
 
 
@@ -47,8 +44,6 @@ class PictureAdapter : RecyclerView.Adapter<PictureAdapter.PictureHolder>(){
 
     override fun onViewRecycled(holder: PictureHolder) {
         super.onViewRecycled(holder)
-        if(holder.itemView!=null){
-            holder.itemView.context?.let { Glide.with(it).clear(holder.itemView) }
-        }
+        holder.itemView.context?.let { Glide.with(it).clear(holder.itemView) }
     }
 }

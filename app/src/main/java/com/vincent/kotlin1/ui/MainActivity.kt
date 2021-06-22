@@ -9,13 +9,16 @@ import androidx.viewpager.widget.ViewPager
 import com.vincent.kotlin1.R
 import com.vincent.kotlin1.widget.MainFragmentAdapter
 import kotlinx.android.synthetic.main.activity_main.*
+import org.w3c.dom.Text
 
 class MainActivity : BaseActivity(), View.OnClickListener {
 
     private val box_pic_id = arrayOf(R.mipmap.ic_news_24dp,R.mipmap.ic_photo_24dp,R.mipmap.ic_video_24dp,R.mipmap.ic_about_me)
+    private val last_box_pic_id = arrayOf(R.mipmap.ic_news_24dp,R.mipmap.ic_photo_24dp,R.mipmap.ic_video_24dp,R.mipmap.ic_about_me)
     private val box_name_id = arrayOf(R.string.text,R.string.picture,R.string.video,R.string.about)
     private lateinit var fragmentAdapter : MainFragmentAdapter
     private lateinit var mainViewPager : ViewPager
+    private var lastPosition = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -45,7 +48,8 @@ class MainActivity : BaseActivity(), View.OnClickListener {
 
     override fun onClick(v: View?) {
         if (v != null){
-           var textView =  v.findViewById<TextView>(R.id.box_title)
+            var textView =  v.findViewById<TextView>(R.id.box_title)
+            var imageView = v.findViewById<ImageView>(R.id.box_image)
             if(textView != null){
                 when(textView.text){
                     resources.getText(R.string.text) ->
@@ -53,11 +57,14 @@ class MainActivity : BaseActivity(), View.OnClickListener {
 
                     resources.getText(R.string.picture) ->
                         mainViewPager.currentItem = 1
-
-
                 }
             }
+
         }
+    }
+
+    fun changeBoxStatus(position : Int){
+
     }
 
 }

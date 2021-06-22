@@ -2,12 +2,12 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="@dimen/dimen_500px">
+    android:layout_height="wrap_content">
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/slideshow"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/dimen_470px"/>
+        android:layout_height="@dimen/dimen_714px"/>
 
     <View
         android:layout_width="match_parent"
@@ -19,7 +19,7 @@
         android:id="@+id/slide_box"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/dimen_410px"
+        android:layout_marginTop="@dimen/dimen_600px"
         android:orientation="horizontal"
         android:gravity="center_horizontal"/>
 

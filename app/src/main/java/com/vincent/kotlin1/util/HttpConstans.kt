@@ -9,7 +9,7 @@ class HttpConstans {
 
         public var NEWSDATE : String = "http://news.at.zhihu.com/api/4/news/before/"
 
-        public var PICTURE : String = "https://shibe.online/api/shibes?count=20&urls=true&httpsUrls=true"
+        public var PICTURE : String = "https://picsum.photos/v2/list?page=%s&limit=20"
 
     }
 
