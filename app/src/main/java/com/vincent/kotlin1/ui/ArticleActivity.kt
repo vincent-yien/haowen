@@ -14,6 +14,7 @@ class ArticleActivity : BaseActivity(){
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        super.addActivity(this)
         setContentView(R.layout.activity_acticle)
         loadData(intent)
     }
@@ -34,6 +35,11 @@ class ArticleActivity : BaseActivity(){
             webView?.loadUrl(url)
         }
 
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        super.removeActivity(this)
     }
 
 }

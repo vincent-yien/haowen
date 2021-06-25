@@ -12,6 +12,7 @@ import com.bumptech.glide.request.RequestListener
 import com.bumptech.glide.request.RequestOptions
 import com.bumptech.glide.request.target.SimpleTarget
 import com.bumptech.glide.request.transition.Transition
+import com.vincent.kotlin1.BaseApplication
 
 class ImageLoadUtil {
 
@@ -45,23 +46,26 @@ class ImageLoadUtil {
             imageview: ImageView,
             url: String,
             context: Context,
-            defultPic: Int
+            defultPic: Int,
+            width : Int
         ) {
             Log.d("RANWS","into:"+url);
             if (TextUtils.isEmpty(url + "")) {
                 imageview.setImageResource(defultPic);
             } else {
-                var options = RequestOptions().diskCacheStrategy(DiskCacheStrategy.NONE).skipMemoryCache(true)
-                    .placeholder(defultPic).error(defultPic).dontAnimate();
-                Glide.with(context).load(url).thumbnail(0.1f).apply(options)
-                    .into(object : SimpleTarget<Drawable>() {
-                        override fun onResourceReady(
-                            resource: Drawable,
-                            transition: Transition<in Drawable>?
-                        ) {
-                            imageview.setImageDrawable(resource)
-                        }
-                    })
+                var options = RequestOptions().diskCacheStrategy(DiskCacheStrategy.DATA).skipMemoryCache(true)
+                    .placeholder(defultPic).error(defultPic).override(width,imageview.width).dontAnimate();
+                imageview.post(Runnable {
+                    Glide.with(context).load(url).thumbnail(0.1f).apply(options)
+                        .into(object : SimpleTarget<Drawable>() {
+                            override fun onResourceReady(
+                                resource: Drawable,
+                                transition: Transition<in Drawable>?
+                            ) {
+                                imageview.setImageDrawable(resource)
+                            }
+                        })
+                })
             }
         }
 

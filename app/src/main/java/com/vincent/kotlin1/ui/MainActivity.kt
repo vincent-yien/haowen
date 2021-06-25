@@ -22,6 +22,7 @@ class MainActivity : BaseActivity(), View.OnClickListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        super.addActivity(this)
         setContentView(R.layout.activity_main)
         loadUI()
 
@@ -65,6 +66,11 @@ class MainActivity : BaseActivity(), View.OnClickListener {
 
     fun changeBoxStatus(position : Int){
 
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        super.removeActivity(this)
     }
 
 }
