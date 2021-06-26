@@ -28,7 +28,7 @@ class ImageLoadUtil {
                 imageview.setImageResource(defultPic);
             } else {
                 var options = RequestOptions().diskCacheStrategy(DiskCacheStrategy.RESOURCE).skipMemoryCache(true)
-                    .placeholder(defultPic).error(defultPic).dontAnimate();
+                    .placeholder(defultPic).error(defultPic).dontAnimate()
                 Glide.with(context).load(url).apply(options)
                     .into(object : SimpleTarget<Drawable>() {
 
@@ -49,14 +49,13 @@ class ImageLoadUtil {
             defultPic: Int,
             width : Int
         ) {
-            Log.d("RANWS","into:"+url);
             if (TextUtils.isEmpty(url + "")) {
                 imageview.setImageResource(defultPic);
             } else {
-                var options = RequestOptions().diskCacheStrategy(DiskCacheStrategy.DATA).skipMemoryCache(true)
-                    .placeholder(defultPic).error(defultPic).override(width,imageview.width).dontAnimate();
+                var options = RequestOptions().diskCacheStrategy(DiskCacheStrategy.RESOURCE).skipMemoryCache(true)
+                    .placeholder(defultPic).error(defultPic).override(width,width).dontAnimate()
                 imageview.post(Runnable {
-                    Glide.with(context).load(url).thumbnail(0.1f).apply(options)
+                    Glide.with(context).load(url).apply(options)
                         .into(object : SimpleTarget<Drawable>() {
                             override fun onResourceReady(
                                 resource: Drawable,

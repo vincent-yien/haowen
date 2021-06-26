@@ -13,27 +13,19 @@ open class BaseActivity : AppCompatActivity(){
     }
 
     fun addActivity(act :Activity){
-        if(act != null){
-            mActivitys.add(act)
-        }
+        mActivitys.add(act)
     }
 
     fun removeActivity(act : Activity){
-        if(act != null){
-            mActivitys.remove(act)
-        }
+        mActivitys.remove(act)
     }
 
     override fun finish() {
         super.finish()
-        for (act in mActivitys){
-            act.finish()
-        }
-        mActivitys.clear()
     }
 
     fun getActivity() : Activity{
-        return mActivitys.get(mActivitys.size-1)
+        return mActivitys[mActivitys.size-1]
     }
 
 

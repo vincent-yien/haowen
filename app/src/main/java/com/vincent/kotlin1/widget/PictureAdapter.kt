@@ -1,5 +1,6 @@
 package com.vincent.kotlin1.widget
 
+import android.app.Activity
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -36,12 +37,10 @@ class PictureAdapter : RecyclerView.Adapter<PictureAdapter.PictureHolder>(){
 
     override fun onBindViewHolder(holder: PictureHolder, position: Int) {
         Thread(Runnable {
-            var  width = BaseApplication.getInstance()
-//            Log.d("RANWS","dddd:"+width)
-            if (width != null) {
-                ImageLoadUtil.displayImageCenterThumbnail(holder.picture,mData[position].download_url,holder.itemView.context,R.drawable.toast_bg,width/3)
-//            }
+            var  width = (holder.itemView.context as Activity).windowManager.defaultDisplay.width;
+            ImageLoadUtil.displayImageCenterThumbnail(holder.picture,mData[position].download_url,holder.itemView.context,R.drawable.toast_bg,width/3)
         }).start()
+
     }
 
 
